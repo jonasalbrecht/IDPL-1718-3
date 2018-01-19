@@ -1,0 +1,50 @@
+Scope:
+	Module: NumPy
+	Technologies: Python(scrapy, spark, Keras/Tensorflow)
+	Requirements: 
+		- program learns from structured, clean datasets.
+		- program takes questions in natural language (english) and responds with code
+		- program should not provide not runnable code
+
+Milestones:
+
+1 - Extract and safe Data 
+
+	1.1 - from:
+	- Stack overflow
+	- Python documentation
+	- NumPy Documentation
+	- Gist, GitHub, etc.
+	- pretty Code examples (many comments)
+
+	1.2 - How to extract
+
+		- Stackoverflow dump
+		- Python webcrawler (e.g. scrapy)
+		- (Stackoverflow) APIs
+
+	1.3 - Find Data Model
+		save as:
+		- JSON ?
+		- MongoDB ?
+		- SQLite ?
+
+2 - Clean Data
+
+	- filter unnecessary words (e.g. spark wordcount, python script) OR
+	- NN for classification of words (relevant/irrelevant)
+	- Code checks for validity: determine how to do checks
+	- unify variable names 
+	- seperate example "setup" from the core code functionality <- what 
+
+3 - Attempt to train Recurrent Neural Network for
+
+	(to be determined)
+	- API sequences (like in the paper Deep API learning)
+	- Complete code fragments
+	- Extracting variable types, or even roles
+
+4 - Use the NN
+
+	- command line interpreter
+	- Webinterface or PlugIn
