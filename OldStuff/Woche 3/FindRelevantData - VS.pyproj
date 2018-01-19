@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{683d5255-355e-403f-ab6b-2ddeb46b3eef}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>FindRelevantData.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="desktop.ini" />
+    <Content Include="qids.txt" />
+    <Content Include="Woche 1\IPDL_plan.txt" />
+    <Content Include="Woche 2\webcrawler\qids.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateIDTxt.py" />
+    <Compile Include="FindRelevantData.py" />
+    <Compile Include="GetJsonFromQuestions.py" />
+    <Compile Include="Woche 2\stackoverflow dump\parseXML_12_11_17\parseXML.py" />
+    <Compile Include="Woche 2\webcrawler\CreateIDTxt.py" />
+    <Compile Include="Woche 2\webcrawler\GetJsonFromQuestions.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Woche 1" />
+    <Folder Include="Woche 2\" />
+    <Folder Include="Woche 2\stackoverflow dump\" />
+    <Folder Include="Woche 2\stackoverflow dump\parseXML_12_11_17" />
+    <Folder Include="Woche 2\webcrawler" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
