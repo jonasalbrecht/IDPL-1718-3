@@ -1,0 +1,178 @@
+[
+    {
+        "code": "empty(shape[, dtype, order])",
+        "text": "Return a new array of given shape and type, without initializing entries."
+    },
+    {
+        "code": "empty_like(a[, dtype, order, subok])",
+        "text": "Return a new array with the same shape and type as a given array."
+    },
+    {
+        "code": "eye(N[, M, k, dtype])",
+        "text": "Return a 2-D array with ones on the diagonal and zeros elsewhere."
+    },
+    {
+        "code": "identity(n[, dtype])",
+        "text": "Return the identity array."
+    },
+    {
+        "code": "ones(shape[, dtype, order])",
+        "text": "Return a new array of given shape and type, filled with ones."
+    },
+    {
+        "code": "ones_like(a[, dtype, order, subok])",
+        "text": "Return an array of ones with the same shape and type as a given array."
+    },
+    {
+        "code": "zeros(shape[, dtype, order])",
+        "text": "Return a new array of given shape and type, filled with zeros."
+    },
+    {
+        "code": "zeros_like(a[, dtype, order, subok])",
+        "text": "Return an array of zeros with the same shape and type as a given array."
+    },
+    {
+        "code": "full(shape, fill_value[, dtype, order])",
+        "text": "Return a new array of given shape and type, filled with fill_value."
+    },
+    {
+        "code": "full_like(a, fill_value[, dtype, order, subok])",
+        "text": "Return a full array with the same shape and type as a given array."
+    },
+    {
+        "code": "array(object[, dtype, copy, order, subok, ndmin])",
+        "text": "Create an array."
+    },
+    {
+        "code": "asarray(a[, dtype, order])",
+        "text": "Convert the input to an array."
+    },
+    {
+        "code": "asanyarray(a[, dtype, order])",
+        "text": "Convert the input to an ndarray, but pass ndarray subclasses through."
+    },
+    {
+        "code": "ascontiguousarray(a[, dtype])",
+        "text": "Return a contiguous array in memory (C order)."
+    },
+    {
+        "code": "asmatrix(data[, dtype])",
+        "text": "Interpret the input as a matrix."
+    },
+    {
+        "code": "copy(a[, order])",
+        "text": "Return an array copy of the given object."
+    },
+    {
+        "code": "frombuffer(buffer[, dtype, count, offset])",
+        "text": "Interpret a buffer as a 1-dimensional array."
+    },
+    {
+        "code": "fromfile(file[, dtype, count, sep])",
+        "text": "Construct an array from data in a text or binary file."
+    },
+    {
+        "code": "fromfunction(function, shape, **kwargs)",
+        "text": "Construct an array by executing a function over each coordinate."
+    },
+    {
+        "code": "fromiter(iterable, dtype[, count])",
+        "text": "Create a new 1-dimensional array from an iterable object."
+    },
+    {
+        "code": "fromstring(string[, dtype, count, sep])",
+        "text": "A new 1-D array initialized from raw binary or text data in a string."
+    },
+    {
+        "code": "loadtxt(fname[, dtype, comments, delimiter, ...])",
+        "text": "Load data from a text file."
+    },
+    {
+        "code": "core.records.array(obj[, dtype, shape, ...])",
+        "text": "Construct a record array from a wide-variety of objects."
+    },
+    {
+        "code": "core.records.fromarrays(arrayList[, dtype, ...])",
+        "text": "create a record array from a (flat) list of arrays"
+    },
+    {
+        "code": "core.records.fromrecords(recList[, dtype, ...])",
+        "text": "create a recarray from a list of records in text form"
+    },
+    {
+        "code": "core.records.fromstring(datastring[, dtype, ...])",
+        "text": "create a (read-only) record array from binary data contained in"
+    },
+    {
+        "code": "core.records.fromfile(fd[, dtype, shape, ...])",
+        "text": "Create an array from binary file data"
+    },
+    {
+        "code": "core.defchararray.array(obj[, itemsize, ...])",
+        "text": "Create a chararray."
+    },
+    {
+        "code": "core.defchararray.asarray(obj[, itemsize, ...])",
+        "text": "Convert the input to a chararray, copying the data only if necessary."
+    },
+    {
+        "code": "arange([start,] stop[, step,][, dtype])",
+        "text": "Return evenly spaced values within a given interval."
+    },
+    {
+        "code": "linspace(start, stop[, num, endpoint, ...])",
+        "text": "Return evenly spaced numbers over a specified interval."
+    },
+    {
+        "code": "logspace(start, stop[, num, endpoint, base, ...])",
+        "text": "Return numbers spaced evenly on a log scale."
+    },
+    {
+        "code": "geomspace(start, stop[, num, endpoint, dtype])",
+        "text": "Return numbers spaced evenly on a log scale (a geometric progression)."
+    },
+    {
+        "code": "meshgrid(*xi, **kwargs)",
+        "text": "Return coordinate matrices from coordinate vectors."
+    },
+    {
+        "code": "mgrid",
+        "text": "nd_grid instance which returns a dense multi-dimensional \u201cmeshgrid\u201d."
+    },
+    {
+        "code": "ogrid",
+        "text": "nd_grid instance which returns an open multi-dimensional \u201cmeshgrid\u201d."
+    },
+    {
+        "code": "diag(v[, k])",
+        "text": "Extract a diagonal or construct a diagonal array."
+    },
+    {
+        "code": "diagflat(v[, k])",
+        "text": "Create a two-dimensional array with the flattened input as a diagonal."
+    },
+    {
+        "code": "tri(N[, M, k, dtype])",
+        "text": "An array with ones at and below the given diagonal and zeros elsewhere."
+    },
+    {
+        "code": "tril(m[, k])",
+        "text": "Lower triangle of an array."
+    },
+    {
+        "code": "triu(m[, k])",
+        "text": "Upper triangle of an array."
+    },
+    {
+        "code": "vander(x[, N, increasing])",
+        "text": "Generate a Vandermonde matrix."
+    },
+    {
+        "code": "mat(data[, dtype])",
+        "text": "Interpret the input as a matrix."
+    },
+    {
+        "code": "bmat(obj[, ldict, gdict])",
+        "text": "Build a matrix object from a string, nested sequence, or array."
+    }
+]
