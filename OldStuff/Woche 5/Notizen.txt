@@ -1,0 +1,16 @@
+@Jannik: Alle Fragen rausfiltern mit mehr als 30 Upvotes. Alternativ die x besten Fragen filtern (z.B. top 300).
+
+Plan: Diese Fragen und Antworten benutzen um von Hand 100% Clean Data zu erzeugen und in folgendes Format bringen:
+
+[
+    {
+        "code": "matrix.T",
+        "text": "Returns the transpose of the matrix."
+    }
+]
+
+--
+Edgar
+
+
+============================================================================

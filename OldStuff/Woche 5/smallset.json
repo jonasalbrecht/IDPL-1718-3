@@ -1,0 +1,780 @@
+{
+ "data": [
+  {
+   "question": "This is my code and I am getting following error:",
+   "answercode": "gray = cv2.cvtColor(np.asarray(image), cv2.COLOR_BGR2GRAY)\n"
+  },
+  {
+   "question": "this is the error\nIndexError: list assignment index out of range\nI want b to read [1 2 3 4 5 6]",
+   "answercode": "for i in range(len(a)):\n    b[i] = a[i] + 1\n"
+  },
+  {
+   "question": "I am trying to track an object in a video by its color. Can i simplify this code:",
+   "answercode": "hue[(hue[...,0] < 110) | (hue[...,0] >140)]  = 0\n"
+  },
+  {
+   "question": "I have a numpy array and I like to check if it is sorted.",
+   "answercode": "(a == np.sort(a)).all()\n"
+  },
+  {
+   "question": "I get this error \nafter this code:\nHow does this code have 2 arguments?",
+   "answercode": "ecomm_stemmer = nltk.PorterStemmer().stem('ecomm')\n"
+  },
+  {
+   "question": "Frame Display got stretched after changing dtpye to np.unit8 ",
+   "answercode": "bb.dtype=np.uint8\n\nbb_new = np.array(bb,dtype=np.uint8)\n"
+  },
+  {
+   "question": "This is the shell.what is 'numpy.core'[although opencv is installed with correct path]1 error..?",
+   "answercode": "pip install opencv-python\n"
+  },
+  {
+   "question": "In this case n=100\nHere's my dataset\nWhat I want is ",
+   "answercode": "In [79]: d[d.amount % 100 > 0]\nOut[79]:\n   id     amount\n2   3  2300.7632\n3   4  4560.0000\n"
+  },
+  {
+   "question": "In the moment I am using this method:\nDoes somebody know a better method?",
+   "answercode": "import numpy as np\nma_data = np.ma.masked_equal(data,0)\nprint(ma_data)\n"
+  },
+  {
+   "question": "I'd like to plot points:\nand then I try:\nand get a \nThoughts?",
+   "answercode": "points = np.array([data['ra'], data['dec']])\n"
+  },
+  {
+   "question": "I need to find the most recent entry using the timestamp. \nRelevant data below. Python 2.7\nOutput:",
+   "answercode": "data.Timestamp = pd.to_datetime(data.Timestamp)\ndata.Timestamp.max()\n"
+  },
+  {
+   "question": "This is my code:\nwhen I run \"python numb.py\" I got this message error:",
+   "answercode": "target = mnist.target[sample]\n"
+  },
+  {
+   "question": "I have a list in python and I want to convert it to an array to be able to use ravel() function.",
+   "answercode": "import numpy as np\nmyarray = np.asarray(mylist)\n"
+  },
+  {
+   "question": "I don't understand why it results [1 4 5] and [2 2]",
+   "answercode": "a[0, 0]  # 1\na[1, 1]  # 4\na[2, 0]  # 5\n"
+  },
+  {
+   "question": "i want to plot this equation but can't compile it",
+   "answercode": "np.mod(np.sin(x),2)\n"
+  },
+  {
+   "question": "I am working with Python 3.6.\nI am really confused, why this happened ? ",
+   "answercode": "np.sign(a) * (np.abs(a)) ** (1 / 3)\n"
+  },
+  {
+   "question": "Can anyone explain this behavior?",
+   "answercode": ">>> import numpy as np\n>>> np.array(None)\narray(None, dtype=object)\n>>> str(np.array(None))\n'None'\n"
+  },
+  {
+   "question": "I have an input array X. \nCan someone help me understand the below code - ",
+   "answercode": "y = np.zeros_like(x)\n\ny = np.roll(x, -1, axis = 1)\n"
+  },
+  {
+   "question": "Whatever I change, dense_1_input always wants '(None, 296)'. The error is:\nCode:",
+   "answercode": "result = result.reshape(1, 296)\n"
+  },
+  {
+   "question": "How do I make this numpy array:\nGet sorted into this:\nThank you.",
+   "answercode": "a[:, a[1].argsort()[::-1]]\n#array([[   1.,    0.,    2.],\n#       [ 312.,  192.,   98.]])\n"
+  },
+  {
+   "question": "I have 3 numpy arrays with dimensions\nHow can I vectorize the following?",
+   "answercode": "M[np.arange(N),y] = values\n"
+  },
+  {
+   "question": "What is difference between\nAnd\nWhen I try\nOn the 2nd array it gives me the following error:",
+   "answercode": "import numpy as np \na = [1,2,3]\nb = np.array(a)\nprint(a,b)\n"
+  },
+  {
+   "question": "how can I add some value to this integer array \"a\" using append or any other method?",
+   "answercode": "a = np.array(list(a) + c, np.int16)\n\nc = np.array(c, np.int16)\n\na = np.r_[a,c]\n"
+  },
+  {
+   "question": "When i issue following command \ni am getting following message ",
+   "answercode": "pip install quandle\n"
+  },
+  {
+   "question": "This question already has an answer here:\nUsing numpy.float32.\nUsing regular Python float.\nWhy?",
+   "answercode": "t = numpy.float64(.3)\nx = numpy.float64(1)\nr = numpy.float64(-.3)\n_t = t+x+r\n_t == 1\n"
+  },
+  {
+   "question": "How do I get the sum of a dot product efficiently \nIs there a way to find num without a for loop",
+   "answercode": "num = np.einsum('ji,i->i',A[:,:20],x+y)\n"
+  },
+  {
+   "question": "Why the answer is floating point? I thought it should be an integer.",
+   "answercode": ">>> np.uint16(4) + np.int16(5)\n9\n"
+  },
+  {
+   "question": "When I use \nI obtain this error\nCould you help me to find the solution? ",
+   "answercode": "dataset = np.genfromtxt('data/train.csv', delimiter=',', dtype='f8,str')[1:]\n"
+  },
+  {
+   "question": "This is embarrassing, but I am unable to plot this:\nThis is datf:\nAnd the error is:",
+   "answercode": "plt.plot(datf[:,0],datf[:,1])\n"
+  },
+  {
+   "question": "Python question:\nWhat is logical behind it? Thank you",
+   "answercode": "numpy.sum(a, axis=None, dtype=None, out=None, ...)\n\nsum(iterable, start=0)\n"
+  },
+  {
+   "question": "I have theee arrays, and want to combine them\nTo get:\nWhat is the function for this ?\nThanks :)",
+   "answercode": "np.hstack(( a,b,c )).ravel()\n"
+  },
+  {
+   "question": "Hi I am new to tensorflow. I want to implement the following python code in tensorflow.",
+   "answercode": "x = tf.ones((10,10,10))\ny = x[:,tf.newaxis,...]\nprint(y.shape)\n# prints (10, 1, 10, 10)\n"
+  },
+  {
+   "question": "Why is there a difference in the following operations, How are they implemented in the library?",
+   "answercode": ">>> prov_img[:19,:20].shape\n(19, 20)\n\n>>> prov_img[:19][:20].shape\n(19, 1250)\n"
+  },
+  {
+   "question": "I am trying to put some numbers into numpy array\nwhere did 1 go?",
+   "answercode": ">>> np.finfo(np.float32).eps\n1.1920929e-07\n"
+  },
+  {
+   "question": "For example, I would like to do something like this\nTo produce a 5x5 ndarray with elements",
+   "answercode": "D = np.vstack((np.hstack((A, B)), np.hstack((B.T, C))))\n"
+  },
+  {
+   "question": "Is there a way of doing the following\nIn a single line? Something like",
+   "answercode": "np.hstack((np.arange(2), np.ones(7-2), np.arange(7,10)))\n"
+  },
+  {
+   "question": "My question is: How can I generate non-repetitive random numbers in numpy?",
+   "answercode": "print random.sample(range(20), 10)\n\na = numpy.arange(20)\nnumpy.random.shuffle(a)\nprint a[:10]\n"
+  },
+  {
+   "question": "so say I do this\nwhich gives\nbut what can I do like\nto get",
+   "answercode": "arr = np.arange(3)\nres = np.hstack((arr, ) * 3)\n\narray([0, 1, 2, 0, 1, 2, 0, 1, 2])\n"
+  },
+  {
+   "question": "I've already installed numpy 1.9.0 in Python.Now what should I do to get numpy+mkl?",
+   "answercode": "pip install numpy\u20111.11.3+mkl\u2011cp35\u2011cp35m\u2011win_amd64.whl\n"
+  },
+  {
+   "question": "I am trying to swap two columns from a 2d array such that\nbecomes:\nHow can I do that?",
+   "answercode": "b = a[:, [0, 2, 1]]\n"
+  },
+  {
+   "question": "Is there any existing function in numpy or scipy to do following operation?\nThank you!",
+   "answercode": "np.outer([2,4],[2,4])\narray([[ 4,  8],\n       [ 8, 16]])\n"
+  },
+  {
+   "question": "When I append elements to an empty list, it tends to overcomplicate. \nI get:\nI want:",
+   "answercode": "import numpy as np\n\nA = np.array([[1], [1], [1]])\nB = A.flatten()\n"
+  },
+  {
+   "question": "Why isn't it appending all the lists? ",
+   "answercode": "for key, value in test.items():\n    print(value['subfile1'])\n    ...\n"
+  },
+  {
+   "question": "I was wondering why I get different result in the two prints? shouldn't they be the same?",
+   "answercode": "import numpy as np\n\nx = np.array([[1.5, 2], [2.4, 6]], dtype=np.float)\nk = 1 / (1 + np.exp(-x))\n"
+  },
+  {
+   "question": "consider the array a\nI'd expect output like this",
+   "answercode": "mygen = (map(len, row) for row in a)\n"
+  },
+  {
+   "question": "observe\nHowever\nWhat does that error mean?",
+   "answercode": "with np.errstate(invalid='ignore'):\n    np.less([np.nan, 0], 1)\n"
+  },
+  {
+   "question": "Is there an alternative way to perform this task, using perhaps a numpy function?",
+   "answercode": "np.sqrt(np.abs(b[:,None])**2 + np.abs(c)**2)\n\nnp.sqrt(b[:,None]**2 + c**2)\n"
+  },
+  {
+   "question": "consider df\n\ngenerates an error\nHow do I get as many of the columns as I can?\n",
+   "answercode": "df[[col for col in list('bcd') if col in df.columns]]\n\n     b    c\n0  1.0  1.0\n1  1.0  1.0\n"
+  },
+  {
+   "question": "Hey everyone while I am trying to pip3 install feather this error popup on the screen.",
+   "answercode": "TypeError: chown() missing 1 required positional argument: 'numeric_owner'\n"
+  },
+  {
+   "question": "The error is on the line \nThe error is ",
+   "answercode": "R[i,i+1:n] = np.transpose(Q[:,i])*Q[:,i+1:n]\n\nR[i,i+1:n] = np.dot(np.transpose(Q[:,i]), Q[:,i+1:n])\n"
+  },
+  {
+   "question": "I have a series s\nWhat is an efficient way to make s look like",
+   "answercode": "import numpy as np\n\nnp.array([[a] for a in s],dtype=object)\narray([[1],\n       [2]], dtype=object)\n"
+  },
+  {
+   "question": "What is the difference between these two numpy objects?",
+   "answercode": "array: [\n[0,0,0,0],\n]\n\narray: [0,0,0,0]\n"
+  },
+  {
+   "question": "I have two numpy 2D-arrays and I want to perform this:\nHow can I make it with numpy?",
+   "answercode": "a_ij * b_ik = c_ijk\n\nc = np.einsum('ij,ik->ijk', a, b)\n"
+  },
+  {
+   "question": "I do as below\nand    \nI tried to change dtypes\nbut again \nwhat's wrong?",
+   "answercode": "from numpy import nan\nnan == nan\n=> False\n"
+  },
+  {
+   "question": "I have two lists.\nHow can I calculate accuracy based on these lists?",
+   "answercode": "sum(1 for x,y in zip(a,b) if x == y) / len(a)\n\nsum(1 for x,y in zip(a,b) if x == y) / float(len(a))\n"
+  },
+  {
+   "question": "Say:\narr2d[:, :1] gives me\narr2d[:,0] gives me \nI thought they would produce exactly same thing.",
+   "answercode": ">>> a = [1, 2, 3, 4]\n>>> a[0]\n1\n>>> a[:1]\n[1]\n"
+  },
+  {
+   "question": "Is there any way I can improve the Python code I attached below? It seems too slow for me now.",
+   "answercode": "G = C_abs + C_abs.T\n\nG[i,j] = C_abs[i,j]+C_abs[j,i]\n"
+  },
+  {
+   "question": "This is working for getting std for a column:\nI want to do the same for rows",
+   "answercode": "np.std( df.transpose()['S1'] )\n"
+  },
+  {
+   "question": "I would like to solve the error: \nIndexError: index 3 is out of bounds for axis 1 with size 3",
+   "answercode": "T=zeros([N+1,3])\n\nT=zeros([N+1,4])\n#            ^ subscriptable up to 3\n"
+  },
+  {
+   "question": "This\nworks perfectly fine. However, this:\nshows this error:\nWhat might be the reason for this?",
+   "answercode": "b=np.zeros((1,49000))\n\nb=np.zeros((2,49000))\n\n1.they are equal, or\n2.one of them is 1\n"
+  },
+  {
+   "question": "I have Xy:\nHow do I return all rows with first column == 1?\nAnswer should be:",
+   "answercode": ">>> numpy.compress((m[:,0] == 1).flat, m, axis=0)\nmatrix([[1, 1, 1, 1],\n        [1, 2, 2, 2]])\n"
+  },
+  {
+   "question": "what is the easiest way to format a numpy float64 value like this:\nto:",
+   "answercode": ">>> np.set_printoptions(precision=3)\n>>> print np.array([8.928571429999999509e+02])\n[ 892.857]\n"
+  },
+  {
+   "question": "Is there a way to simplify\njust like the way you write a=a+b as a+=b ? (a,b are both np.array)",
+   "answercode": "import numpy as np\n\na = np.random.randn(4, 10)\nb = np.random.randn(10, 5)\n\nc = a @ b\n"
+  },
+  {
+   "question": "I have following data frame\nHow I can apply sqrt function after I do sum to the columns?",
+   "answercode": "football[['wins','losses']].sum(axis=1).pow(1./2)\n"
+  },
+  {
+   "question": "We know how to do it when N = 1\nWhat is the best way to get the top N, when N > 1? (say, 5)",
+   "answercode": "np.sort(m)[:,-N:]\n"
+  },
+  {
+   "question": "I have a few numpy arrays:\nHow can I use those to generate this:",
+   "answercode": "np.array([\"_\".join(row.astype('|S1')) for row in np.concatenate([[X], [Y], [Z]]).T])\n"
+  },
+  {
+   "question": "What do I need to do with p1 for FFT to work?",
+   "answercode": "struct.unpack('hhhhh', p1[0])\n"
+  },
+  {
+   "question": "Here's the code:\nThe error I get states: \nValueError: object of too small depth for desired array",
+   "answercode": "h = [scipy.misc.imrotate(h, 15*i, 'bicubic') for i in range(10)]\n"
+  },
+  {
+   "question": "I have such Python code:\nAnd such error:\nHow can I fix it?",
+   "answercode": "x.astype(int)\n"
+  },
+  {
+   "question": "I'm trying to save a 5D array and I'm having this error.",
+   "answercode": "format % tuple(row)\n\n'%1.12f %1.12f %1.12f'\n"
+  },
+  {
+   "question": "gives: \nWhy isn't it returning a scalar?",
+   "answercode": "np.einsum('ij, ij', v1, v2)\n"
+  },
+  {
+   "question": "I am using the code shown below but doesn't work... \nFor example, I want to put \nthen ",
+   "answercode": "X=[2,2,2]\nS=lambda X:sum(X**2+np.ones(3))\nprint S(2*np.ones(3))\n\n15.0\n"
+  },
+  {
+   "question": "I get this error:\nHere are the shapes of the 2 arrays:\nHow can I fix this error?",
+   "answercode": "flow_data = xr.DataArray(hndl_tran['val'])\n\nflow_data = np.array(flow_data)\n"
+  },
+  {
+   "question": "Here I need to get a 2D array \nI need to get a 2D array of 6 rows by 4 columns.",
+   "answercode": "np.concatenate((x[0:3,:], y[0:3,:]), axis=0)\n\nnp.vstack((x[0:3,:],y[0:3,:]))\n"
+  },
+  {
+   "question": "I could not make the code look normal...",
+   "answercode": "test = np.zeros((3,2))\nprint(test[0])\n\n[ 0.  0.]\n"
+  },
+  {
+   "question": "A noob question, but in this numpy array:\nwhat does '|S82' mean? ",
+   "answercode": "byte-order: |   not applicable\nkind:       S   (byte-)string\nsize:       82  (characters long)\n"
+  },
+  {
+   "question": "Why is it that a numpy array can be indexed by a list, but not by a list comprehension?",
+   "answercode": "lst[[i for i in range(4) if i%2 == 0]]\n"
+  },
+  {
+   "question": "For example\nBy performing what operations will I get:",
+   "answercode": "c = np.where(a==0, b, a)\n\nIn [15]: c\nOut[15]: \narray([[ 1, 17],\n       [19,  4]])\n"
+  },
+  {
+   "question": "Let's say I have a 1 dimensional array...\nHow to make this into a np.array?",
+   "answercode": "my_list = [1,2,3,4,5]\n\nimport numpy as np\n\nmy_array = np.array(my_list)\n"
+  },
+  {
+   "question": "I initialize\nand\nbut why when printing Tcoords still",
+   "answercode": "Tcoords = np.array([0.0,0.0])\n"
+  },
+  {
+   "question": "I couldnt import numpy though I had it installed in the system",
+   "answercode": "/usr/bin/python -c \"import numpy\"\n"
+  },
+  {
+   "question": "How to add new element 'NEW' to numpy array features?\nError:",
+   "answercode": "features =np.append(features,['New'])\n\nfeatures = df.columns.values\n"
+  },
+  {
+   "question": "I saw a piece of code as following:\nb is the same as a. What is the purpose of that slicing?",
+   "answercode": "a = np.rand(4, 2)\na[:, 0] = [4, 2, 1, 3]\nb = a[::-1, :]\n\nb.sort(axis=0)\n"
+  },
+  {
+   "question": "Numpy allows me do like this:\nHow can I make array like this? I mean to write like:",
+   "answercode": "data = numpy.array([(1,), (2,), (3,)], dtype=[('Time', float)])\n"
+  },
+  {
+   "question": "Is there something like numpy.argmin(x), but for median?",
+   "answercode": "numpy.argsort(data)[len(data)//2]\n"
+  },
+  {
+   "question": "This should produce histogram with  all values for bin with 0 but the output is:\n\nWhat's wrong?",
+   "answercode": "plt.hist(np.zeros((784)), bins=(0,1,2))\n\nplt.hist(np.zeros((784)), bins=7)\n"
+  },
+  {
+   "question": "I'm wondering that must be a way of doing the following without the for loop:\nAny suggestions??",
+   "answercode": "a *= fact[:, np.newaxis, :, np.newaxis, np.newaxis] \n"
+  },
+  {
+   "question": "I have a numpy array Z such that:\nHow do I transform Z into a new array NewZ, such that:\n?",
+   "answercode": "import numpy as np\nZ = np.random.random((138, 112, 123))\n"
+  },
+  {
+   "question": "Let's say I have a theano function:",
+   "answercode": "def my_fun(x, y):\n  z = x + y\n  return z\n\nf = function(\n  inputs=[x, y],\n  outputs=[my_fun(x, y)]\n)\n"
+  },
+  {
+   "question": "I have the following arrays:\nand I want to get the following:\nHow do I do this??",
+   "answercode": "idxs = np.where( arr3[:,0] == arr1 )\nanswer = arr3[idxs, :]\n"
+  },
+  {
+   "question": "How to return 'false' because all elements are 'false'?\nThe given list is:",
+   "answercode": ">>> data = [False, False, False]\n>>> not any(data)\nTrue\n"
+  },
+  {
+   "question": "I wan to select only rows which has not any 0 element.\nThe result would be:",
+   "answercode": ">>> data[np.all(data, axis=1)]\narray([[ 1,  2,  3,  4,  5],\n       [11, 12, 13, 14, 15]])\n"
+  },
+  {
+   "question": "This code:\ngives: \nWhy does 98 work fine but 99 gives nan?",
+   "answercode": "print np.nanpercentile(my_series, 98)\nprint np.nanpercentile(my_series, 99)\n"
+  },
+  {
+   "question": "I was calculating covariance run times like this in ipython",
+   "answercode": "mat = np.matrix(df.to_matrix())\n"
+  },
+  {
+   "question": "I have two arrays a1,a2\uff0cI want to merge them together.the result is a3",
+   "answercode": " a3 = np.concatenate((a1,a2),axis = 1)\n"
+  },
+  {
+   "question": "thank you for your comments",
+   "answercode": "(x_rep-x_rep.transpose())**2 + (y_rep-y_rep.transpose())**2)\n"
+  },
+  {
+   "question": "I am using this but I find it very inelegant. Any improvements are very welcomed:",
+   "answercode": "lat1, lat2, lon1, lon2 = np.radians((lat1, lat2, lon1, lon2))\n"
+  },
+  {
+   "question": "Why should we have this inconsistency:",
+   "answercode": ">>> np.array(['a', 'b']) != 0\nTrue\n"
+  },
+  {
+   "question": "If I have:\nHow do I get the index for the letter 'C'?",
+   "answercode": "> np.where(a == 'C')[0][0]\n2\n"
+  },
+  {
+   "question": "I am iterating through two arrays with Numpy by following code\nbut now I need it is a dictionary as",
+   "answercode": "{i: \"(x,y) = (%f,%f)\" % t for i, t in enumerate(np.nditer([positions,forces]), 1)}\n"
+  },
+  {
+   "question": "I have a csv file, and I try to open with\nbut, when I try to call one column\nI get this error",
+   "answercode": "data['fetcha']  # or\ndata[col_names[1]] \n"
+  },
+  {
+   "question": "from this array \nI have a loop like this\nand i take output :\nbut I want the output like this :",
+   "answercode": "end =[]\nfor s1 in s:\n    end.append([mahalanobis(s1, s2, invcov) for s2 in s])\n"
+  },
+  {
+   "question": "Code:   \nError:",
+   "answercode": "va=np.concatenate((var,var1),axis=0)\n"
+  },
+  {
+   "question": "Is there a direct way instead of the following?",
+   "answercode": ">>> np.fromstring(b'\\xa3\\x8eq\\xb5', dtype='>u4')\narray([2744021429], dtype=uint32)\n"
+  },
+  {
+   "question": "I want to extract all lat,lon tuples as new numpy array. How's that possible?",
+   "answercode": "numpy.array([(e[1]['lat'], e[1]['lon']) for e in n])\n"
+  },
+  {
+   "question": "is there a way to pass array-range as argument to function ?\nSomething like :",
+   "answercode": ">>> def blah(ary,arg1):\n...     print ary[arg1]\n>>> blah(range(10), slice(1, 5))\n[1, 2, 3, 4]\n"
+  },
+  {
+   "question": "Why doesn't np.newaxis always append the axis where I put it? See example:",
+   "answercode": ">>> M[...,np.newaxis].shape\n(3, 2, 1)\n"
+  },
+  {
+   "question": "Suppose I have an array like:\nHow can I make right indexing to get a view array like:",
+   "answercode": "b=range(3)\nb.remove(1)\na[:,:, b]\n"
+  },
+  {
+   "question": "Is it possible to write in shorthand the following: \nas say",
+   "answercode": "x = [0.5] * 12\n\nimport numpy as np\nx = np.full(12, 0.5)\n"
+  },
+  {
+   "question": "given matrix:\nhow can you make the first column, x[:,0], into a diagonal matrix in numpy? to get:",
+   "answercode": "numpy.diag( x.A[ :, 0 ] )\n\nnumpy.matrix( numpy.diag( x.A[ :, 0 ] ) )\n"
+  },
+  {
+   "question": "How to convert this:\nto numpy array?",
+   "answercode": "np.asarray(x)\n"
+  },
+  {
+   "question": "How to compute a xi-xj matrix in numpy without loops (by api calls)?\nHere's what to start with:",
+   "answercode": "import numpy as np\nx = np.random.rand(4)\nx = x.reshape(-1,1)\nxij = np.matrix(x.T - x)\n"
+  },
+  {
+   "question": "The expected result is 7. How to get?",
+   "answercode": "import numpy as np\n\na = np.array([1,2,13,7,3,5])\nprint a[np.flatnonzero(a == 13) + 1]\n"
+  },
+  {
+   "question": "I create red image and try save it via cv2.imwrite\nBut I get error \nHow to fix it? \nThanks!",
+   "answercode": "image = np.empty([IMAGE_SIZE, IMAGE_SIZE, 3], dtype=type(RED[0]))\n"
+  },
+  {
+   "question": "Is it possible to convert a one dimensional array\nto a two dimensional array that is equivalent to",
+   "answercode": "import numpy as np\n\na = np.array([1,2,3])\n\na = a[np.newaxis].T\n\nprint(a)\n# [[1]\n#  [2]\n#  [3]]\n"
+  },
+  {
+   "question": "Now what I am doing is:\nis there anyway to import such that I could directly do:",
+   "answercode": "from numpy import * \n\nfrom numpy import arange\n"
+  },
+  {
+   "question": "Error Displayed \nTraceback (most recent call last):\nCode",
+   "answercode": "morphOps(np.array(list(threshold)))\n"
+  },
+  {
+   "question": "error with numpy array on x\nhere's the code:\nand the error:",
+   "answercode": "x = np.array([[20, 20],[20, 20]], int32)\n"
+  },
+  {
+   "question": "Say I have\nIs it possible to call something like",
+   "answercode": "arr[idx] = ~arr[idx]\n\narr[idx] ^= 1\n"
+  },
+  {
+   "question": "Data\nOutput\nWhy are my strings lost?",
+   "answercode": "dtype=[('Symbol', 'S3'), ...]\n\ndtype=[('Symbol', (str, 3)), ...]\n"
+  },
+  {
+   "question": "In Matlab, we can do\nDo we have a similar function like inline in Python?",
+   "answercode": "% pylab inline\n"
+  },
+  {
+   "question": "Is there something more efficient than the following code to swap two values of a numpy 1D array?",
+   "answercode": "input_seq[ix1], input_seq[ix2] = input_seq[ix2], input_seq[ix1]\n"
+  },
+  {
+   "question": "I have a numpy array as\nAnd I want to select any two random rows from these so the output will be-",
+   "answercode": "import random\nout_list = random.sample(your_numpy_list,2)\n"
+  },
+  {
+   "question": "Something very simple in Matlab, but I can't get it in Python. How to get the following:\nAs in",
+   "answercode": "z = x.reshape(3,1)* y.reshape(1,4)\n\nz = x[:,np.newaxis]*y\n\nz = np.einsum('i,j->ij',x,y)\n"
+  },
+  {
+   "question": "Can someone explain the logic behind the output of the following script?\nThanks :)",
+   "answercode": "object is None\n\nnp.dtype('i4') == 'i4'\nTrue\n"
+  },
+  {
+   "question": "I have these two data structures: \nWhat I want to get at the end is:",
+   "answercode": ">>> np.outer(a, ts)\narray([[1, 2, 3],\n       [2, 4, 6],\n       [3, 6, 9]])\n"
+  },
+  {
+   "question": "I just want to return a matrix.  What am I missing?\nI get the following error:",
+   "answercode": "print numpy.matrix(...)\n\nimport numpy as np\n\nprint np.matrix(...)\n"
+  },
+  {
+   "question": "What is the neatest way to multiply element-wise a list of lists of numbers?\nE.g.",
+   "answercode": ">>> a = np.array([[1,2,3],[2,3,4],[3,4,5]])\n>>> np.prod(a,axis=1)\narray([ 6, 24, 60])\n"
+  },
+  {
+   "question": "How can I define the label for the other axis?",
+   "answercode": "ax.set_zlabel('Z')\n"
+  },
+  {
+   "question": "In Python, how do I create a numpy array of arbitrary shape filled with all True or all False?",
+   "answercode": "array([[ True,  True],\n       [ True,  True]], dtype=bool)\n"
+  },
+  {
+   "question": "I have a numpy array\nI want to add 0 as first index to the list. How can I do that?\noutput : ",
+   "answercode": "a.insert(0,0) \n"
+  },
+  {
+   "question": "I have an array:\nIs there a way to change the -inf values to just 0?",
+   "answercode": "from numpy import inf\nx[x == -inf] = 0\n"
+  },
+  {
+   "question": "Example:\nHow to create a array like this in python?",
+   "answercode": "your_array = [[5,3], [3,6], [4, 9]] # you could do this\nprint(your_array[0]) # would print [5,3]\n"
+  },
+  {
+   "question": "Can't inderstand why numpy doesn't transpose matrix.\nThis doesn't work:\nbut this works:",
+   "answercode": ">>> rc[0].shape\n(3,)\n\n>>> np.reshape(rc[0], (1,3)).T\narray([[0],\n       [0],\n       [1]])\n"
+  },
+  {
+   "question": "I have 3 matrices A,B,C. I wish to create a larger matrix of the form\nHow to do this in Numpy ?",
+   "answercode": "numpy.bmat([[numpy.zeros(appropriate_shape), A], [B, C]])\n"
+  },
+  {
+   "question": "Does Java have an equivalent to Python's range(int, int) method?",
+   "answercode": "ContiguousSet.create(Range.closed(1, 5), DiscreteDomain.integers());\n"
+  },
+  {
+   "question": "\nMy code is working fine for P0, P1 but doesn't work for P2 :( Can anyone spot my mistake? ",
+   "answercode": "def __init__(self,ct=0,x=0,y=0,z=0, r=None)\n"
+  },
+  {
+   "question": "How to get first element from each dimension in a numpy ndarray?\nResult should be:",
+   "answercode": "  list( A[:,0] )\n"
+  },
+  {
+   "question": "How to calculate mean of values in the list omitting a special value (-999)?\nAny idea ???",
+   "answercode": "from numpy import*\nA = [4,5,7,8,-999]\nresult = mean(A[A!=-999])\nprint (result)\n"
+  },
+  {
+   "question": "I try to sort an array: \nBut the output is:\nThe array does not change at all",
+   "answercode": "new_arr = np.argsort(arr)\n\nnp.array(arr)[new_arr]\n"
+  },
+  {
+   "question": "What is the difference between:\nand\nThanks for your answer!",
+   "answercode": ">> np.sum(A, 0)\n   3.0\n>> np.sum(B, 0)\n   array([ 1., 1., 1.])\n"
+  },
+  {
+   "question": "take row and col size from user and like in c matrix how to enter nxn matrix using numpy",
+   "answercode": ">>> new = matrix([eval(raw_input(\"enter matrix: \"))])\nenter matrix: [1,2]\n>>> new\nmatrix([[1, 2]])\n"
+  },
+  {
+   "question": "Is there a numpy way of doing\nsimilar to this\nsomething like this perhaps?",
+   "answercode": "np.where(n > 0, n - t, n)\n"
+  },
+  {
+   "question": "The following trivial example returns a singular matrix. Why? Any ways to overcome it?",
+   "answercode": "np.corrcoef(array([63,84]),array([46,42]))\n[[ 1. -1.]\n [-1.  1.]]\n\nn>=max(3,p)\n"
+  },
+  {
+   "question": "How to calc percentage of values between 54.5 and 81.75, 81.75 and 87.200000000000003, etc .. ?",
+   "answercode": "percentileofscore(a, 54.5) == 50.\npercentileofscore(a, 81.75) == 75.\n"
+  },
+  {
+   "question": "I receive global name fftpack is not defined. What is wrong?",
+   "answercode": "from scipy import fftpack\n"
+  },
+  {
+   "question": "How to get array with subarrays inside containing number of white pixels in some order? ",
+   "answercode": "zeros = [(q==0).sum() for q in arraysplit]\n"
+  },
+  {
+   "question": "I am wondering if there is a cleaner way to store the follwoing:",
+   "answercode": "arr2d = []\narr2d[1] = arr[arr1inds]\narr2d[2] = arr[arr2inds]\narr2d[3] = arr[arr3inds]\n...\n"
+  },
+  {
+   "question": "Looks ugly:\nDoes not work:\nIs there an elegant and working solution of the above \"problem\"?",
+   "answercode": "df_new[df_new['l_ext'].isin([31, 22, 30, 25, 64])]\n"
+  },
+  {
+   "question": "Is there a way to get a vertical arange without having to go through these extra steps?",
+   "answercode": "np.arange(10).reshape((10, 1))\n"
+  },
+  {
+   "question": "For example I have 2 arrays\nHow can I zip a and b so I get\n?",
+   "answercode": "np.array([zip(x,y) for x,y in zip(a,b)])\n"
+  },
+  {
+   "question": "Here is what I am currently doing, it works but it's a little cumbersome:",
+   "answercode": "max(x.min(), x.max(), key=abs)\n"
+  },
+  {
+   "question": "I have the following img object\nHow do I make img just (480,640) (i.e. lose the ,3)?",
+   "answercode": "newimg = img[..., 0]\n\nimg = img[..., 0].copy()\n"
+  },
+  {
+   "question": "I want to be able to identify -9 as the min(x), not 0.\nThanks",
+   "answercode": "x[np.diag_indices_from(x)] = np.iinfo(x.dtype).max\n"
+  },
+  {
+   "question": "Imagine, I have\nI'd like to get element wise result and a updated.",
+   "answercode": "temp_a = a[0:size1:2]\ntemp_a *= b[1:size1:3]\n"
+  },
+  {
+   "question": "I want to fetch each row in an numpy.ndarray and transform it. for instance:",
+   "answercode": "a[i,j]=a[i,j]*r\n"
+  },
+  {
+   "question": "In other words, each element of the outer array will be a row vector from the original 2D array.",
+   "answercode": "a = np.array([[1,2,3],\n              [4,5,6],\n              [7,8,9]])\n"
+  },
+  {
+   "question": "I have a list in python and I want to convert it to an array to be able to use ravel() function.",
+   "answercode": "import numpy as np\nmyarray = np.asarray(mylist)\n"
+  },
+  {
+   "question": "Why is this code not working? I can't get this numpy array to resize correctly.",
+   "answercode": "a=a[:5,:5]\n"
+  },
+  {
+   "question": "",
+   "answercode": "M[:,colnumber] *= scalar\n\nM[rownumber,:] *= scalar\n\ncol_1 = M[:,1]\n"
+  },
+  {
+   "question": "or another Open Source Python Library: Numpy, Matplotlib ...",
+   "answercode": "def func(x):\n     return x**3/(3*x) - 4\n\nfrom optimize import fsolve  \nx0 = fsolve(func, 3.5)\n"
+  },
+  {
+   "question": "What is the preferred way of doing the conversion using PIL/Numpy/SciPy today?",
+   "answercode": "from skimage import io, color\nrgb = io.imread(filename)\nlab = color.rgb2lab(rgb)\n"
+  },
+  {
+   "question": "Why do I get this error message? ValueError: setting an array element with a sequence. Thank you",
+   "answercode": "kOUT = np.zeros(N+1)\nkOUT = kOUT.tolist()\n"
+  },
+  {
+   "question": "How to convert a variable from Python's datetime.timedelta to numpy.timedelta64?",
+   "answercode": "array([datetime.timedelta(1)], dtype=\"timedelta64[ms]\")[0]\n"
+  },
+  {
+   "question": "In a project using SciPy and NumPy, should I use scipy.pi, numpy.pi, or math.pi?",
+   "answercode": ">>> import math\n>>> import numpy as np\n>>> import scipy\n>>> math.pi == np.pi == scipy.pi\nTrue\n"
+  },
+  {
+   "question": "Can someone please explain the '-5' below.\nI'm somewhat new to numpy, but this seems bizarre",
+   "answercode": "a = -9\nb = 2\nprint a//b #-5\nprint int(float(a)/b) #-4\n"
+  },
+  {
+   "question": "Shouldn't any() test all elements of the array and return True?",
+   "answercode": "(numpy.array([2])  > 1).any()\n"
+  },
+  {
+   "question": "Given an index and a size, is there a more efficient way to produce the standard basis vector:",
+   "answercode": "a = np.zeros(size)\na[index] = 1.0\n"
+  },
+  {
+   "question": "How do I get the UNIX time from a numpy.datetime64 or numpy.datetime_?\nAs in for example:",
+   "answercode": "def get_unixtime(dt64):\n    return dt64.astype('datetime64[s]').astype('int')\n"
+  },
+  {
+   "question": "How do I find the row or column which contains the array-wide maximum value in a 2d numpy array?",
+   "answercode": "np.argmax(np.max(x, axis=1))\n\nnp.argmax(np.max(x, axis=0))\n"
+  },
+  {
+   "question": "I just started to translate a Matlab code to numpy, how can I write the following code in python",
+   "answercode": "InputVec = np.array([2, 3, 4])\nInputVariable[0,:] = InputVec\n"
+  },
+  {
+   "question": "Is there an equivalent to the MATLAB \ncommand in Numpy?\nIn MATLAB, \nIn Python,",
+   "answercode": ">>> a = zeros((2, 5))\n>>> a.shape\n(2, 5)\n"
+  },
+  {
+   "question": "How do I create an identity matrix with numpy?\nIs there a simpler syntax than",
+   "answercode": "numpy.matrix(numpy.identity(n), copy=False)\n"
+  },
+  {
+   "question": "I have an existing hdf5 file with three arrays, i want to extract one of the arrays using h5py. ",
+   "answercode": "with h5py.File('the_filename', 'r') as f:\n    my_array = f['array_name'][()]\n"
+  },
+  {
+   "question": "Can numpy evaluate N largest elements in a multidimensional array?\nSay:",
+   "answercode": " a = [1,2,3]\n sorted(a, reverse=True)[:2]\n\nnp.sort(a.ravel())[::-1][:2]\n"
+  },
+  {
+   "question": "I would like to create an 3D array in numpy as follow : \nIs there a nice way to write it ? ",
+   "answercode": "np.mod(np.arange(10),2)\nOut[4]: array([0, 1, 0, 1, 0, 1, 0, 1, 0, 1])\n"
+  },
+  {
+   "question": "May I know why ndarray allows floating point index accessing, and what does that mean?",
+   "answercode": "import numpy as np\nx = np.arange(10)\n\nprint x[1.9]\nprint x[2.1]\n\nprint x[[1.2, 3.4]]\n"
+  },
+  {
+   "question": "My question is: How can I generate non-repetitive random numbers in numpy?",
+   "answercode": "print random.sample(range(20), 10)\n\na = numpy.arange(20)\nnumpy.random.shuffle(a)\nprint a[:10]\n"
+  },
+  {
+   "question": "I can't find it in numpy's documentation. Any help is appreciated.",
+   "answercode": ">>> np.random.randn(2, 2)\n"
+  },
+  {
+   "question": "My question is: How can I get b from a using tile?\nI did it like this, but I want something better:",
+   "answercode": "b = a.reshape((3,1,3)) * np.ones((1,3,1))\n"
+  },
+  {
+   "question": "I'm looking for a numpy function that will do the equivalent of:",
+   "answercode": "indices = [1, 4, 5, 6, 7]\nzero = numpy.zeros(10)\nzero[indices] = 42\n"
+  },
+  {
+   "question": "It seems to me there are two versions of numpy function multiply():\nMy questions is two fold:",
+   "answercode": "c = multilpy(a, b)\n\nmultilpy(a, b, c)\n"
+  },
+  {
+   "question": "Here S is an array\nHow will I multiply this and get the value?",
+   "answercode": "import numpy as np\nP=2.45\nS=[22, 33, 45.6, 21.6, 51.8]\nSP = P*np.array(S)\n"
+  },
+  {
+   "question": "I need to know if it is possible to save a python list as a numPy array.",
+   "answercode": "from numpy  import array\na = array( your_list )\n"
+  },
+  {
+   "question": "Could someone explain how to get Chi^2/doF using numpy.polyfit?",
+   "answercode": "p, residuals, _, _, _ = numpy.polyfit(x, y, 2, full=True)\nchisq_dof = residuals / (len(x) - 3)\n"
+  },
+  {
+   "question": "How to get from\nto\nin NumPy?",
+   "answercode": "import numpy as np\nx = np.array(['1.1', '2.2', '3.3'])\ny = x.astype(np.float)\n"
+  },
+  {
+   "question": "How can I get get the position of the biggest item in a multi-dimensional numpy array?",
+   "answercode": "numpy.nonzero(a.max() == a)\n(array([1]), array([0]))\n\nnumpy.argwhere(a.max() == a)\n"
+  },
+  {
+   "question": "In other words, I want to do something like\ninstead of ",
+   "answercode": "A[[[-1],[0],[1]],[2,3,4]] += np.ones((3, 3))\n\nA[np.ix_([-1,0,1],[2,3,4])] += np.ones((3, 3))\n"
+  },
+  {
+   "question": "I can't get this snippet to work:",
+   "answercode": "A_ik = A[(A[:,0] == origin) & (A[:,1] == destination), 2]\n"
+  },
+  {
+   "question": "are there any way to create an object form any class inside a numpy array?. Something like:\nThanks",
+   "answercode": "numpy.array([Register() for i in xrange(4)])\n"
+  },
+  {
+   "question": "With this code I get this answer. Why do I get negative values?",
+   "answercode": "import numpy\na=numpy.arange(1000,dtype=object)\na**20\n"
+  },
+  {
+   "question": "Does a library or script exist to convert between NumPy and JPype arrays?",
+   "answercode": "JArray(float, 1)(numpyarray)\n\nJArray(float, 1)(numpyarray.tolist())\n"
+  },
+  {
+   "question": "Can someone indicate what I am doing wrong here?\nThe output is:",
+   "answercode": "1 a\n2 b\n3 c\n4 d\n5 e\n"
+  },
+  {
+   "question": "How can I check which version of Numpy I'm using? I'm using Mac OS X 10.6.1 Snow Leopard.",
+   "answercode": "import numpy\nnumpy.version.version\n"
+  }
+ ]
+}
