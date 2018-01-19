@@ -1,0 +1,4 @@
+stack overflow händisch frage nzu bestimmten funktionen/methoden rausfinden
+
+wenn klassifikation fehl shclägt - difflib weiter benutzen 
+dann codet3mplates ggf automatisch ausfülen
