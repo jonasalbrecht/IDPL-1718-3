@@ -1,0 +1,38 @@
+[
+    {
+        "code": "bitwise_and(x1, x2[, out])",
+        "text": "Compute the bit-wise AND of two arrays element-wise."
+    },
+    {
+        "code": "bitwise_or(x1, x2[, out])",
+        "text": "Compute the bit-wise OR of two arrays element-wise."
+    },
+    {
+        "code": "bitwise_xor(x1, x2[, out])",
+        "text": "Compute the bit-wise XOR of two arrays element-wise."
+    },
+    {
+        "code": "invert(x[, out])",
+        "text": "Compute bit-wise inversion, or bit-wise NOT, element-wise."
+    },
+    {
+        "code": "left_shift(x1, x2[, out])",
+        "text": "Shift the bits of an integer to the left."
+    },
+    {
+        "code": "right_shift(x1, x2[, out])",
+        "text": "Shift the bits of an integer to the right."
+    },
+    {
+        "code": "packbits(myarray[, axis])",
+        "text": "Packs the elements of a binary-valued array into bits in a uint8 array."
+    },
+    {
+        "code": "unpackbits(myarray[, axis])",
+        "text": "Unpacks elements of a uint8 array into a binary-valued output array."
+    },
+    {
+        "code": "binary_repr(num[, width])",
+        "text": "Return the binary representation of the input number as a string."
+    }
+]

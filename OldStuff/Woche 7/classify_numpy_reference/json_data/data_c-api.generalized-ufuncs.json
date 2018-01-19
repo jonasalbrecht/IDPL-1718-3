@@ -1,0 +1,22 @@
+[
+    {
+        "code": "add",
+        "text": "(),()->()"
+    },
+    {
+        "code": "inner1d",
+        "text": "(i),(i)->()"
+    },
+    {
+        "code": "sum1d",
+        "text": "(i)->()"
+    },
+    {
+        "code": "dot2d",
+        "text": "(m,n),(n,p)->(m,p)"
+    },
+    {
+        "code": "outer_inner",
+        "text": "(i,t),(j,t)->(i,j)"
+    }
+]

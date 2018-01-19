@@ -1,0 +1,454 @@
+[
+    {
+        "code": "ndarray",
+        "text": "An array object represents a multidimensional, homogeneous array of fixed-size items."
+    },
+    {
+        "code": "ndarray.flags",
+        "text": "Information about the memory layout of the array."
+    },
+    {
+        "code": "ndarray.shape",
+        "text": "Tuple of array dimensions."
+    },
+    {
+        "code": "ndarray.strides",
+        "text": "Tuple of bytes to step in each dimension when traversing an array."
+    },
+    {
+        "code": "ndarray.ndim",
+        "text": "Number of array dimensions."
+    },
+    {
+        "code": "ndarray.data",
+        "text": "Python buffer object pointing to the start of the arrays data."
+    },
+    {
+        "code": "ndarray.size",
+        "text": "Number of elements in the array."
+    },
+    {
+        "code": "ndarray.itemsize",
+        "text": "Length of one array element in bytes."
+    },
+    {
+        "code": "ndarray.nbytes",
+        "text": "Total bytes consumed by the elements of the array."
+    },
+    {
+        "code": "ndarray.base",
+        "text": "Base object if memory is from some other object."
+    },
+    {
+        "code": "ndarray.dtype",
+        "text": "Data-type of the arrays elements."
+    },
+    {
+        "code": "ndarray.T",
+        "text": "Same as self.transpose(), except that self is returned if self.ndim < 2."
+    },
+    {
+        "code": "ndarray.real",
+        "text": "The real part of the array."
+    },
+    {
+        "code": "ndarray.imag",
+        "text": "The imaginary part of the array."
+    },
+    {
+        "code": "ndarray.flat",
+        "text": "A 1-D iterator over the array."
+    },
+    {
+        "code": "ndarray.ctypes",
+        "text": "An object to simplify the interaction of the array with the ctypes module."
+    },
+    {
+        "code": "__array_interface__",
+        "text": "Python-side of the array interface"
+    },
+    {
+        "code": "__array_struct__",
+        "text": "C-side of the array interface"
+    },
+    {
+        "code": "ndarray.ctypes",
+        "text": "An object to simplify the interaction of the array with the ctypes module."
+    },
+    {
+        "code": "ndarray.item(*args)",
+        "text": "Copy an element of an array to a standard Python scalar and return it."
+    },
+    {
+        "code": "ndarray.tolist()",
+        "text": "Return the array as a (possibly nested) list."
+    },
+    {
+        "code": "ndarray.itemset(*args)",
+        "text": "Insert scalar into an array (scalar is cast to arrays dtype, if possible)"
+    },
+    {
+        "code": "ndarray.tostring([order])",
+        "text": "Construct Python bytes containing the raw data bytes in the array."
+    },
+    {
+        "code": "ndarray.tobytes([order])",
+        "text": "Construct Python bytes containing the raw data bytes in the array."
+    },
+    {
+        "code": "ndarray.tofile(fid[, sep, format])",
+        "text": "Write array to a file as text or binary (default)."
+    },
+    {
+        "code": "ndarray.dump(file)",
+        "text": "Dump a pickle of the array to the specified file."
+    },
+    {
+        "code": "ndarray.dumps()",
+        "text": "Returns the pickle of the array as a string."
+    },
+    {
+        "code": "ndarray.astype(dtype[, order, casting, ...])",
+        "text": "Copy of the array, cast to a specified type."
+    },
+    {
+        "code": "ndarray.byteswap(inplace)",
+        "text": "Swap the bytes of the array elements"
+    },
+    {
+        "code": "ndarray.copy([order])",
+        "text": "Return a copy of the array."
+    },
+    {
+        "code": "ndarray.view([dtype, type])",
+        "text": "New view of array with the same data."
+    },
+    {
+        "code": "ndarray.getfield(dtype[, offset])",
+        "text": "Returns a field of the given array as a certain type."
+    },
+    {
+        "code": "ndarray.setflags([write, align, uic])",
+        "text": "Set array flags WRITEABLE, ALIGNED, and UPDATEIFCOPY, respectively."
+    },
+    {
+        "code": "ndarray.fill(value)",
+        "text": "Fill the array with a scalar value."
+    },
+    {
+        "code": "ndarray.reshape(shape[, order])",
+        "text": "Returns an array containing the same data with a new shape."
+    },
+    {
+        "code": "ndarray.resize(new_shape[, refcheck])",
+        "text": "Change shape and size of array in-place."
+    },
+    {
+        "code": "ndarray.transpose(*axes)",
+        "text": "Returns a view of the array with axes transposed."
+    },
+    {
+        "code": "ndarray.swapaxes(axis1, axis2)",
+        "text": "Return a view of the array with axis1 and axis2 interchanged."
+    },
+    {
+        "code": "ndarray.flatten([order])",
+        "text": "Return a copy of the array collapsed into one dimension."
+    },
+    {
+        "code": "ndarray.ravel([order])",
+        "text": "Return a flattened array."
+    },
+    {
+        "code": "ndarray.squeeze([axis])",
+        "text": "Remove single-dimensional entries from the shape of a."
+    },
+    {
+        "code": "ndarray.take(indices[, axis, out, mode])",
+        "text": "Return an array formed from the elements of a at the given indices."
+    },
+    {
+        "code": "ndarray.put(indices, values[, mode])",
+        "text": "Set a.flat[n] = values[n] for all n in indices."
+    },
+    {
+        "code": "ndarray.repeat(repeats[, axis])",
+        "text": "Repeat elements of an array."
+    },
+    {
+        "code": "ndarray.choose(choices[, out, mode])",
+        "text": "Use an index array to construct a new array from a set of choices."
+    },
+    {
+        "code": "ndarray.sort([axis, kind, order])",
+        "text": "Sort an array, in-place."
+    },
+    {
+        "code": "ndarray.argsort([axis, kind, order])",
+        "text": "Returns the indices that would sort this array."
+    },
+    {
+        "code": "ndarray.partition(kth[, axis, kind, order])",
+        "text": "Rearranges the elements in the array in such a way that value of the element in kth position is in the position it would be in a sorted array."
+    },
+    {
+        "code": "ndarray.argpartition(kth[, axis, kind, order])",
+        "text": "Returns the indices that would partition this array."
+    },
+    {
+        "code": "ndarray.searchsorted(v[, side, sorter])",
+        "text": "Find indices where elements of v should be inserted in a to maintain order."
+    },
+    {
+        "code": "ndarray.nonzero()",
+        "text": "Return the indices of the elements that are non-zero."
+    },
+    {
+        "code": "ndarray.compress(condition[, axis, out])",
+        "text": "Return selected slices of this array along given axis."
+    },
+    {
+        "code": "ndarray.diagonal([offset, axis1, axis2])",
+        "text": "Return specified diagonals."
+    },
+    {
+        "code": "ndarray.argmax([axis, out])",
+        "text": "Return indices of the maximum values along the given axis."
+    },
+    {
+        "code": "ndarray.min([axis, out, keepdims])",
+        "text": "Return the minimum along a given axis."
+    },
+    {
+        "code": "ndarray.argmin([axis, out])",
+        "text": "Return indices of the minimum values along the given axis of a."
+    },
+    {
+        "code": "ndarray.ptp([axis, out])",
+        "text": "Peak to peak (maximum - minimum) value along a given axis."
+    },
+    {
+        "code": "ndarray.clip([min, max, out])",
+        "text": "Return an array whose values are limited to [min, max]."
+    },
+    {
+        "code": "ndarray.conj()",
+        "text": "Complex-conjugate all elements."
+    },
+    {
+        "code": "ndarray.round([decimals, out])",
+        "text": "Return a with each element rounded to the given number of decimals."
+    },
+    {
+        "code": "ndarray.trace([offset, axis1, axis2, dtype, out])",
+        "text": "Return the sum along diagonals of the array."
+    },
+    {
+        "code": "ndarray.sum([axis, dtype, out, keepdims])",
+        "text": "Return the sum of the array elements over the given axis."
+    },
+    {
+        "code": "ndarray.cumsum([axis, dtype, out])",
+        "text": "Return the cumulative sum of the elements along the given axis."
+    },
+    {
+        "code": "ndarray.mean([axis, dtype, out, keepdims])",
+        "text": "Returns the average of the array elements along given axis."
+    },
+    {
+        "code": "ndarray.var([axis, dtype, out, ddof, keepdims])",
+        "text": "Returns the variance of the array elements, along given axis."
+    },
+    {
+        "code": "ndarray.std([axis, dtype, out, ddof, keepdims])",
+        "text": "Returns the standard deviation of the array elements along given axis."
+    },
+    {
+        "code": "ndarray.prod([axis, dtype, out, keepdims])",
+        "text": "Return the product of the array elements over the given axis"
+    },
+    {
+        "code": "ndarray.cumprod([axis, dtype, out])",
+        "text": "Return the cumulative product of the elements along the given axis."
+    },
+    {
+        "code": "ndarray.all([axis, out, keepdims])",
+        "text": "Returns True if all elements evaluate to True."
+    },
+    {
+        "code": "ndarray.any([axis, out, keepdims])",
+        "text": "Returns True if any of the elements of a evaluate to True."
+    },
+    {
+        "code": "ndarray.__lt__",
+        "text": "x.__lt__(y) <==> x<y"
+    },
+    {
+        "code": "ndarray.__le__",
+        "text": "x.__le__(y) <==> x<=y"
+    },
+    {
+        "code": "ndarray.__gt__",
+        "text": "x.__gt__(y) <==> x>y"
+    },
+    {
+        "code": "ndarray.__ge__",
+        "text": "x.__ge__(y) <==> x>=y"
+    },
+    {
+        "code": "ndarray.__eq__",
+        "text": "x.__eq__(y) <==> x==y"
+    },
+    {
+        "code": "ndarray.__ne__",
+        "text": "x.__ne__(y) <==> x!=y"
+    },
+    {
+        "code": "ndarray.__nonzero__",
+        "text": "x.__nonzero__() <==> x != 0"
+    },
+    {
+        "code": "ndarray.__neg__",
+        "text": "x.__neg__() <==> -x"
+    },
+    {
+        "code": "ndarray.__pos__",
+        "text": "x.__pos__() <==> +x"
+    },
+    {
+        "code": "ndarray.__invert__",
+        "text": "x.__invert__() <==> ~x"
+    },
+    {
+        "code": "ndarray.__add__",
+        "text": "x.__add__(y) <==> x+y"
+    },
+    {
+        "code": "ndarray.__sub__",
+        "text": "x.__sub__(y) <==> x-y"
+    },
+    {
+        "code": "ndarray.__mul__",
+        "text": "x.__mul__(y) <==> x*y"
+    },
+    {
+        "code": "ndarray.__div__",
+        "text": "x.__div__(y) <==> x/y"
+    },
+    {
+        "code": "ndarray.__truediv__",
+        "text": "x.__truediv__(y) <==> x/y"
+    },
+    {
+        "code": "ndarray.__floordiv__",
+        "text": "x.__floordiv__(y) <==> x//y"
+    },
+    {
+        "code": "ndarray.__mod__",
+        "text": "x.__mod__(y) <==> x%y"
+    },
+    {
+        "code": "ndarray.__lshift__",
+        "text": "x.__lshift__(y) <==> x<<y"
+    },
+    {
+        "code": "ndarray.__rshift__",
+        "text": "x.__rshift__(y) <==> x>>y"
+    },
+    {
+        "code": "ndarray.__and__",
+        "text": "x.__and__(y) <==> x&y"
+    },
+    {
+        "code": "ndarray.__or__",
+        "text": "x.__or__(y) <==> x|y"
+    },
+    {
+        "code": "ndarray.__xor__",
+        "text": "x.__xor__(y) <==> x^y"
+    },
+    {
+        "code": "ndarray.__iadd__",
+        "text": "x.__iadd__(y) <==> x+=y"
+    },
+    {
+        "code": "ndarray.__isub__",
+        "text": "x.__isub__(y) <==> x-=y"
+    },
+    {
+        "code": "ndarray.__imul__",
+        "text": "x.__imul__(y) <==> x*=y"
+    },
+    {
+        "code": "ndarray.__idiv__",
+        "text": "x.__idiv__(y) <==> x/=y"
+    },
+    {
+        "code": "ndarray.__itruediv__",
+        "text": "x.__itruediv__(y) <==> x/y"
+    },
+    {
+        "code": "ndarray.__ifloordiv__",
+        "text": "x.__ifloordiv__(y) <==> x//y"
+    },
+    {
+        "code": "ndarray.__imod__",
+        "text": "x.__imod__(y) <==> x%=y"
+    },
+    {
+        "code": "ndarray.__ipow__",
+        "text": "x.__ipow__(y) <==> x**=y"
+    },
+    {
+        "code": "ndarray.__ilshift__",
+        "text": "x.__ilshift__(y) <==> x<<=y"
+    },
+    {
+        "code": "ndarray.__irshift__",
+        "text": "x.__irshift__(y) <==> x>>=y"
+    },
+    {
+        "code": "ndarray.__iand__",
+        "text": "x.__iand__(y) <==> x&=y"
+    },
+    {
+        "code": "ndarray.__ior__",
+        "text": "x.__ior__(y) <==> x|=y"
+    },
+    {
+        "code": "ndarray.__ixor__",
+        "text": "x.__ixor__(y) <==> x^=y"
+    },
+    {
+        "code": "ndarray.__copy__([order])",
+        "text": "Return a copy of the array."
+    },
+    {
+        "code": "ndarray.__deepcopy__(() -> Deep copy of array.)",
+        "text": "Used if copy.deepcopy is called on an array."
+    },
+    {
+        "code": "ndarray.__reduce__()",
+        "text": "For pickling."
+    },
+    {
+        "code": "ndarray.__setstate__(version, shape, dtype, ...)",
+        "text": "For unpickling."
+    },
+    {
+        "code": "ndarray.__array__(...)",
+        "text": "Returns either a new reference to self if dtype is not given or a new array of provided data type if dtype is different from the current dtype of the array."
+    },
+    {
+        "code": "ndarray.__getitem__",
+        "text": "x.__getitem__(y) <==> x[y]"
+    },
+    {
+        "code": "ndarray.__setitem__",
+        "text": "x.__setitem__(i, y) <==> x[i]=y"
+    },
+    {
+        "code": "ndarray.__contains__",
+        "text": "x.__contains__(y) <==> y in x"
+    }
+]

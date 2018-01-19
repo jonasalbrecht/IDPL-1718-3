@@ -1,0 +1,182 @@
+[
+    {
+        "code": "dtype",
+        "text": "Create a data type object."
+    },
+    {
+        "code": "number, inexact, floating",
+        "text": "float"
+    },
+    {
+        "code": "complexfloating",
+        "text": "cfloat"
+    },
+    {
+        "code": "integer, signedinteger",
+        "text": "int_"
+    },
+    {
+        "code": "unsignedinteger",
+        "text": "uint"
+    },
+    {
+        "code": "character",
+        "text": "string"
+    },
+    {
+        "code": "generic, flexible",
+        "text": "void"
+    },
+    {
+        "code": "int",
+        "text": "int_"
+    },
+    {
+        "code": "bool",
+        "text": "bool_"
+    },
+    {
+        "code": "float",
+        "text": "float_"
+    },
+    {
+        "code": "complex",
+        "text": "cfloat"
+    },
+    {
+        "code": "str",
+        "text": "string"
+    },
+    {
+        "code": "unicode",
+        "text": "unicode_"
+    },
+    {
+        "code": "buffer",
+        "text": "void"
+    },
+    {
+        "code": "(all others)",
+        "text": "object_"
+    },
+    {
+        "code": "'b'",
+        "text": "boolean"
+    },
+    {
+        "code": "'i'",
+        "text": "(signed) integer"
+    },
+    {
+        "code": "'u'",
+        "text": "unsigned integer"
+    },
+    {
+        "code": "'f'",
+        "text": "floating-point"
+    },
+    {
+        "code": "'c'",
+        "text": "complex-floating point"
+    },
+    {
+        "code": "'m'",
+        "text": "timedelta"
+    },
+    {
+        "code": "'M'",
+        "text": "datetime"
+    },
+    {
+        "code": "'O'",
+        "text": "(Python) objects"
+    },
+    {
+        "code": "'S', 'a'",
+        "text": "(byte-)string"
+    },
+    {
+        "code": "'U'",
+        "text": "Unicode"
+    },
+    {
+        "code": "'V'",
+        "text": "raw data (void)"
+    },
+    {
+        "code": "dtype.type",
+        "text": "The type object used to instantiate a scalar of this data-type."
+    },
+    {
+        "code": "dtype.kind",
+        "text": "A character code (one of \u2018biufcmMOSUV) identifying the general kind of data."
+    },
+    {
+        "code": "dtype.char",
+        "text": "A unique character code for each of the 21 different built-in types."
+    },
+    {
+        "code": "dtype.num",
+        "text": "A unique number for each of the 21 different built-in types."
+    },
+    {
+        "code": "dtype.str",
+        "text": "The array-protocol typestring of this data-type object."
+    },
+    {
+        "code": "dtype.name",
+        "text": "A bit-width name for this data-type."
+    },
+    {
+        "code": "dtype.itemsize",
+        "text": "The element size of this data-type object."
+    },
+    {
+        "code": "dtype.byteorder",
+        "text": "A character indicating the byte-order of this data-type object."
+    },
+    {
+        "code": "dtype.fields",
+        "text": "Dictionary of named fields defined for this data type, or None."
+    },
+    {
+        "code": "dtype.names",
+        "text": "Ordered list of field names, or None if there are no fields."
+    },
+    {
+        "code": "dtype.subdtype",
+        "text": "Tuple (item_dtype, shape) if this dtype describes a sub-array, and None otherwise."
+    },
+    {
+        "code": "dtype.shape",
+        "text": "Shape tuple of the sub-array if this data type describes a sub-array, and () otherwise."
+    },
+    {
+        "code": "dtype.hasobject",
+        "text": "Boolean indicating whether this dtype contains any reference-counted objects in any fields or sub-dtypes."
+    },
+    {
+        "code": "dtype.flags",
+        "text": "Bit-flags describing how this data type is to be interpreted."
+    },
+    {
+        "code": "dtype.isbuiltin",
+        "text": "Integer indicating how this dtype relates to the built-in dtypes."
+    },
+    {
+        "code": "dtype.isnative",
+        "text": "Boolean indicating whether the byte order of this dtype is native to the platform."
+    },
+    {
+        "code": "dtype.descr",
+        "text": "PEP3118 interface description of the data-type."
+    },
+    {
+        "code": "dtype.alignment",
+        "text": "The required alignment (bytes) of this data-type according to the compiler."
+    },
+    {
+        "code": "dtype.newbyteorder([new_order])",
+        "text": "Return a new dtype with a different byte order."
+    }
+]

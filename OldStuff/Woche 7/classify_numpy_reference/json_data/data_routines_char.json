@@ -1,0 +1,186 @@
+[
+    {
+        "code": "add(x1, x2)",
+        "text": "Return element-wise string concatenation for two arrays of str or unicode."
+    },
+    {
+        "code": "multiply(a, i)",
+        "text": "Return (a * i), that is string multiple concatenation, element-wise."
+    },
+    {
+        "code": "mod(a, values)",
+        "text": "Return (a % i), that is pre-Python 2.6 string formatting (iterpolation), element-wise for a pair of array_likes of str or unicode."
+    },
+    {
+        "code": "capitalize(a)",
+        "text": "Return a copy of a with only the first character of each element capitalized."
+    },
+    {
+        "code": "center(a, width[, fillchar])",
+        "text": "Return a copy of a with its elements centered in a string of length width."
+    },
+    {
+        "code": "decode(a[, encoding, errors])",
+        "text": "Calls str.decode element-wise."
+    },
+    {
+        "code": "encode(a[, encoding, errors])",
+        "text": "Calls str.encode element-wise."
+    },
+    {
+        "code": "join(sep, seq)",
+        "text": "Return a string which is the concatenation of the strings in the sequence seq."
+    },
+    {
+        "code": "ljust(a, width[, fillchar])",
+        "text": "Return an array with the elements of a left-justified in a string of length width."
+    },
+    {
+        "code": "lower(a)",
+        "text": "Return an array with the elements converted to lowercase."
+    },
+    {
+        "code": "lstrip(a[, chars])",
+        "text": "For each element in a, return a copy with the leading characters removed."
+    },
+    {
+        "code": "partition(a, sep)",
+        "text": "Partition each element in a around sep."
+    },
+    {
+        "code": "replace(a, old, new[, count])",
+        "text": "For each element in a, return a copy of the string with all occurrences of substring old replaced by new."
+    },
+    {
+        "code": "rjust(a, width[, fillchar])",
+        "text": "Return an array with the elements of a right-justified in a string of length width."
+    },
+    {
+        "code": "rpartition(a, sep)",
+        "text": "Partition (split) each element around the right-most separator."
+    },
+    {
+        "code": "rsplit(a[, sep, maxsplit])",
+        "text": "For each element in a, return a list of the words in the string, using sep as the delimiter string."
+    },
+    {
+        "code": "rstrip(a[, chars])",
+        "text": "For each element in a, return a copy with the trailing characters removed."
+    },
+    {
+        "code": "split(a[, sep, maxsplit])",
+        "text": "For each element in a, return a list of the words in the string, using sep as the delimiter string."
+    },
+    {
+        "code": "splitlines(a[, keepends])",
+        "text": "For each element in a, return a list of the lines in the element, breaking at line boundaries."
+    },
+    {
+        "code": "strip(a[, chars])",
+        "text": "For each element in a, return a copy with the leading and trailing characters removed."
+    },
+    {
+        "code": "swapcase(a)",
+        "text": "Return element-wise a copy of the string with uppercase characters converted to lowercase and vice versa."
+    },
+    {
+        "code": "title(a)",
+        "text": "Return element-wise title cased version of string or unicode."
+    },
+    {
+        "code": "translate(a, table[, deletechars])",
+        "text": "For each element in a, return a copy of the string where all characters occurring in the optional argument deletechars are removed, and the remaining characters have been mapped through the given translation table."
+    },
+    {
+        "code": "upper(a)",
+        "text": "Return an array with the elements converted to uppercase."
+    },
+    {
+        "code": "zfill(a, width)",
+        "text": "Return the numeric string left-filled with zeros"
+    },
+    {
+        "code": "equal(x1, x2)",
+        "text": "Return (x1 == x2) element-wise."
+    },
+    {
+        "code": "not_equal(x1, x2)",
+        "text": "Return (x1 != x2) element-wise."
+    },
+    {
+        "code": "greater_equal(x1, x2)",
+        "text": "Return (x1 >= x2) element-wise."
+    },
+    {
+        "code": "less_equal(x1, x2)",
+        "text": "Return (x1 <= x2) element-wise."
+    },
+    {
+        "code": "greater(x1, x2)",
+        "text": "Return (x1 > x2) element-wise."
+    },
+    {
+        "code": "less(x1, x2)",
+        "text": "Return (x1 < x2) element-wise."
+    },
+    {
+        "code": "count(a, sub[, start, end])",
+        "text": "Returns an array with the number of non-overlapping occurrences of substring sub in the range [start, end]."
+    },
+    {
+        "code": "find(a, sub[, start, end])",
+        "text": "For each element, return the lowest index in the string where substring sub is found."
+    },
+    {
+        "code": "index(a, sub[, start, end])",
+        "text": "Like find, but raises ValueError when the substring is not found."
+    },
+    {
+        "code": "isalpha(a)",
+        "text": "Returns true for each element if all characters in the string are alphabetic and there is at least one character, false otherwise."
+    },
+    {
+        "code": "isdecimal(a)",
+        "text": "For each element, return True if there are only decimal characters in the element."
+    },
+    {
+        "code": "isdigit(a)",
+        "text": "Returns true for each element if all characters in the string are digits and there is at least one character, false otherwise."
+    },
+    {
+        "code": "islower(a)",
+        "text": "Returns true for each element if all cased characters in the string are lowercase and there is at least one cased character, false otherwise."
+    },
+    {
+        "code": "isnumeric(a)",
+        "text": "For each element, return True if there are only numeric characters in the element."
+    },
+    {
+        "code": "isspace(a)",
+        "text": "Returns true for each element if there are only whitespace characters in the string and there is at least one character, false otherwise."
+    },
+    {
+        "code": "istitle(a)",
+        "text": "Returns true for each element if the element is a titlecased string and there is at least one character, false otherwise."
+    },
+    {
+        "code": "isupper(a)",
+        "text": "Returns true for each element if all cased characters in the string are uppercase and there is at least one character, false otherwise."
+    },
+    {
+        "code": "rfind(a, sub[, start, end])",
+        "text": "For each element in a, return the highest index in the string where substring sub is found, such that sub is contained within [start, end]."
+    },
+    {
+        "code": "rindex(a, sub[, start, end])",
+        "text": "Like rfind, but raises ValueError when the substring sub is not found."
+    },
+    {
+        "code": "startswith(a, prefix[, start, end])",
+        "text": "Returns a boolean array which is True where the string element in a starts with prefix, otherwise False."
+    },
+    {
+        "code": "chararray",
+        "text": "Provides a convenient view on arrays of string and unicode values."
+    }
+]

@@ -1,0 +1,386 @@
+[
+    {
+        "code": "setbufsize(size)",
+        "text": "Set the size of the buffer used in ufuncs."
+    },
+    {
+        "code": "seterr([all, divide, over, under, invalid])",
+        "text": "Set how floating-point errors are handled."
+    },
+    {
+        "code": "seterrcall(func)",
+        "text": "Set the floating-point error callback function or log object."
+    },
+    {
+        "code": "__doc__",
+        "text": "A docstring for each ufunc. The first part of the docstring is\ndynamically generated from the number of outputs, the name, and\nthe number of inputs. The second part of the docstring is\nprovided at creation time and stored with the ufunc."
+    },
+    {
+        "code": "__name__",
+        "text": "The name of the ufunc."
+    },
+    {
+        "code": "ufunc.nin",
+        "text": "The number of inputs."
+    },
+    {
+        "code": "ufunc.nout",
+        "text": "The number of outputs."
+    },
+    {
+        "code": "ufunc.nargs",
+        "text": "The number of arguments."
+    },
+    {
+        "code": "ufunc.ntypes",
+        "text": "The number of types."
+    },
+    {
+        "code": "ufunc.types",
+        "text": "Returns a list with types grouped input->output."
+    },
+    {
+        "code": "ufunc.identity",
+        "text": "The identity value."
+    },
+    {
+        "code": "ufunc.reduce(a[, axis, dtype, out, keepdims])",
+        "text": "Reduces a\u2018s dimension by one, by applying ufunc along one axis."
+    },
+    {
+        "code": "ufunc.accumulate(array[, axis, dtype, out, ...])",
+        "text": "Accumulate the result of applying the operator to all elements."
+    },
+    {
+        "code": "ufunc.reduceat(a, indices[, axis, dtype, out])",
+        "text": "Performs a (local) reduce with specified slices over a single axis."
+    },
+    {
+        "code": "ufunc.outer(A, B, **kwargs)",
+        "text": "Apply the ufunc op to all pairs (a, b) with a in A and b in B."
+    },
+    {
+        "code": "ufunc.at(a, indices[, b])",
+        "text": "Performs unbuffered in place operation on operand \u2018a for elements specified by \u2018indices."
+    },
+    {
+        "code": "add(x1, x2[, out])",
+        "text": "Add arguments element-wise."
+    },
+    {
+        "code": "subtract(x1, x2[, out])",
+        "text": "Subtract arguments, element-wise."
+    },
+    {
+        "code": "multiply(x1, x2[, out])",
+        "text": "Multiply arguments element-wise."
+    },
+    {
+        "code": "divide(x1, x2[, out])",
+        "text": "Divide arguments element-wise."
+    },
+    {
+        "code": "logaddexp(x1, x2[, out])",
+        "text": "Logarithm of the sum of exponentiations of the inputs."
+    },
+    {
+        "code": "logaddexp2(x1, x2[, out])",
+        "text": "Logarithm of the sum of exponentiations of the inputs in base-2."
+    },
+    {
+        "code": "true_divide(x1, x2[, out])",
+        "text": "Returns a true division of the inputs, element-wise."
+    },
+    {
+        "code": "floor_divide(x1, x2[, out])",
+        "text": "Return the largest integer smaller or equal to the division of the inputs."
+    },
+    {
+        "code": "negative(x[, out])",
+        "text": "Numerical negative, element-wise."
+    },
+    {
+        "code": "power(x1, x2[, out])",
+        "text": "First array elements raised to powers from second array, element-wise."
+    },
+    {
+        "code": "remainder(x1, x2[, out])",
+        "text": "Return element-wise remainder of division."
+    },
+    {
+        "code": "mod(x1, x2[, out])",
+        "text": "Return element-wise remainder of division."
+    },
+    {
+        "code": "fmod(x1, x2[, out])",
+        "text": "Return the element-wise remainder of division."
+    },
+    {
+        "code": "absolute(x[, out])",
+        "text": "Calculate the absolute value element-wise."
+    },
+    {
+        "code": "fabs(x[, out])",
+        "text": "Compute the absolute values element-wise."
+    },
+    {
+        "code": "rint(x[, out])",
+        "text": "Round elements of the array to the nearest integer."
+    },
+    {
+        "code": "sign(x[, out])",
+        "text": "Returns an element-wise indication of the sign of a number."
+    },
+    {
+        "code": "conj(x[, out])",
+        "text": "Return the complex conjugate, element-wise."
+    },
+    {
+        "code": "exp(x[, out])",
+        "text": "Calculate the exponential of all elements in the input array."
+    },
+    {
+        "code": "exp2(x[, out])",
+        "text": "Calculate 2**p for all p in the input array."
+    },
+    {
+        "code": "log(x[, out])",
+        "text": "Natural logarithm, element-wise."
+    },
+    {
+        "code": "log2(x[, out])",
+        "text": "Base-2 logarithm of x."
+    },
+    {
+        "code": "log10(x[, out])",
+        "text": "Return the base 10 logarithm of the input array, element-wise."
+    },
+    {
+        "code": "expm1(x[, out])",
+        "text": "Calculate exp(x) - 1 for all elements in the array."
+    },
+    {
+        "code": "log1p(x[, out])",
+        "text": "Return the natural logarithm of one plus the input array, element-wise."
+    },
+    {
+        "code": "sqrt(x[, out])",
+        "text": "Return the positive square-root of an array, element-wise."
+    },
+    {
+        "code": "square(x[, out])",
+        "text": "Return the element-wise square of the input."
+    },
+    {
+        "code": "cbrt(x[, out])",
+        "text": "Return the cube-root of an array, element-wise."
+    },
+    {
+        "code": "reciprocal(x[, out])",
+        "text": "Return the reciprocal of the argument, element-wise."
+    },
+    {
+        "code": "sin(x[, out])",
+        "text": "Trigonometric sine, element-wise."
+    },
+    {
+        "code": "cos(x[, out])",
+        "text": "Cosine element-wise."
+    },
+    {
+        "code": "tan(x[, out])",
+        "text": "Compute tangent element-wise."
+    },
+    {
+        "code": "arcsin(x[, out])",
+        "text": "Inverse sine, element-wise."
+    },
+    {
+        "code": "arccos(x[, out])",
+        "text": "Trigonometric inverse cosine, element-wise."
+    },
+    {
+        "code": "arctan(x[, out])",
+        "text": "Trigonometric inverse tangent, element-wise."
+    },
+    {
+        "code": "arctan2(x1, x2[, out])",
+        "text": "Element-wise arc tangent of x1/x2 choosing the quadrant correctly."
+    },
+    {
+        "code": "hypot(x1, x2[, out])",
+        "text": "Given the \u201clegs\u201d of a right triangle, return its hypotenuse."
+    },
+    {
+        "code": "sinh(x[, out])",
+        "text": "Hyperbolic sine, element-wise."
+    },
+    {
+        "code": "cosh(x[, out])",
+        "text": "Hyperbolic cosine, element-wise."
+    },
+    {
+        "code": "tanh(x[, out])",
+        "text": "Compute hyperbolic tangent element-wise."
+    },
+    {
+        "code": "arcsinh(x[, out])",
+        "text": "Inverse hyperbolic sine element-wise."
+    },
+    {
+        "code": "arccosh(x[, out])",
+        "text": "Inverse hyperbolic cosine, element-wise."
+    },
+    {
+        "code": "arctanh(x[, out])",
+        "text": "Inverse hyperbolic tangent element-wise."
+    },
+    {
+        "code": "deg2rad(x[, out])",
+        "text": "Convert angles from degrees to radians."
+    },
+    {
+        "code": "rad2deg(x[, out])",
+        "text": "Convert angles from radians to degrees."
+    },
+    {
+        "code": "bitwise_and(x1, x2[, out])",
+        "text": "Compute the bit-wise AND of two arrays element-wise."
+    },
+    {
+        "code": "bitwise_or(x1, x2[, out])",
+        "text": "Compute the bit-wise OR of two arrays element-wise."
+    },
+    {
+        "code": "bitwise_xor(x1, x2[, out])",
+        "text": "Compute the bit-wise XOR of two arrays element-wise."
+    },
+    {
+        "code": "invert(x[, out])",
+        "text": "Compute bit-wise inversion, or bit-wise NOT, element-wise."
+    },
+    {
+        "code": "left_shift(x1, x2[, out])",
+        "text": "Shift the bits of an integer to the left."
+    },
+    {
+        "code": "right_shift(x1, x2[, out])",
+        "text": "Shift the bits of an integer to the right."
+    },
+    {
+        "code": "greater(x1, x2[, out])",
+        "text": "Return the truth value of (x1 > x2) element-wise."
+    },
+    {
+        "code": "greater_equal(x1, x2[, out])",
+        "text": "Return the truth value of (x1 >= x2) element-wise."
+    },
+    {
+        "code": "less(x1, x2[, out])",
+        "text": "Return the truth value of (x1 < x2) element-wise."
+    },
+    {
+        "code": "less_equal(x1, x2[, out])",
+        "text": "Return the truth value of (x1 =< x2) element-wise."
+    },
+    {
+        "code": "not_equal(x1, x2[, out])",
+        "text": "Return (x1 != x2) element-wise."
+    },
+    {
+        "code": "equal(x1, x2[, out])",
+        "text": "Return (x1 == x2) element-wise."
+    },
+    {
+        "code": "logical_and(x1, x2[, out])",
+        "text": "Compute the truth value of x1 AND x2 element-wise."
+    },
+    {
+        "code": "logical_or(x1, x2[, out])",
+        "text": "Compute the truth value of x1 OR x2 element-wise."
+    },
+    {
+        "code": "logical_xor(x1, x2[, out])",
+        "text": "Compute the truth value of x1 XOR x2, element-wise."
+    },
+    {
+        "code": "logical_not(x[, out])",
+        "text": "Compute the truth value of NOT x element-wise."
+    },
+    {
+        "code": "maximum(x1, x2[, out])",
+        "text": "Element-wise maximum of array elements."
+    },
+    {
+        "code": "minimum(x1, x2[, out])",
+        "text": "Element-wise minimum of array elements."
+    },
+    {
+        "code": "fmax(x1, x2[, out])",
+        "text": "Element-wise maximum of array elements."
+    },
+    {
+        "code": "fmin(x1, x2[, out])",
+        "text": "Element-wise minimum of array elements."
+    },
+    {
+        "code": "isfinite(x[, out])",
+        "text": "Test element-wise for finiteness (not infinity or not Not a Number)."
+    },
+    {
+        "code": "isinf(x[, out])",
+        "text": "Test element-wise for positive or negative infinity."
+    },
+    {
+        "code": "isnan(x[, out])",
+        "text": "Test element-wise for NaN and return result as a boolean array."
+    },
+    {
+        "code": "fabs(x[, out])",
+        "text": "Compute the absolute values element-wise."
+    },
+    {
+        "code": "signbit(x[, out])",
+        "text": "Returns element-wise True where signbit is set (less than zero)."
+    },
+    {
+        "code": "copysign(x1, x2[, out])",
+        "text": "Change the sign of x1 to that of x2, element-wise."
+    },
+    {
+        "code": "nextafter(x1, x2[, out])",
+        "text": "Return the next floating-point value after x1 towards x2, element-wise."
+    },
+    {
+        "code": "spacing(x[, out])",
+        "text": "Return the distance between x and the nearest adjacent number."
+    },
+    {
+        "code": "modf(x[, out1, out2])",
+        "text": "Return the fractional and integral parts of an array, element-wise."
+    },
+    {
+        "code": "ldexp(x1, x2[, out])",
+        "text": "Returns x1 * 2**x2, element-wise."
+    },
+    {
+        "code": "frexp(x[, out1, out2])",
+        "text": "Decompose the elements of x into mantissa and twos exponent."
+    },
+    {
+        "code": "fmod(x1, x2[, out])",
+        "text": "Return the element-wise remainder of division."
+    },
+    {
+        "code": "floor(x[, out])",
+        "text": "Return the floor of the input, element-wise."
+    },
+    {
+        "code": "ceil(x[, out])",
+        "text": "Return the ceiling of the input, element-wise."
+    },
+    {
+        "code": "trunc(x[, out])",
+        "text": "Return the truncated value of the input, element-wise."
+    }
+]
