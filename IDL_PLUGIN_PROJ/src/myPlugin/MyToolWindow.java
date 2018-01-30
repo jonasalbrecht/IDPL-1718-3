@@ -5,11 +5,11 @@ import com.intellij.openapi.wm.ToolWindow;
 import com.intellij.openapi.wm.ToolWindowFactory;
 import com.intellij.ui.content.Content;
 import com.intellij.ui.content.ContentFactory;
+
 import com.wcohen.ss.SmithWaterman;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
-import javax.xml.crypto.Data;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
@@ -154,6 +154,11 @@ public class MyToolWindow implements ToolWindowFactory {
                 lab.addMouseListener(new MouseListener() {
                     @Override
                     public void mouseClicked(MouseEvent e) {
+                        int index = results.indexOf(dp);
+                        String message = "Description:\n" + dp.getDescription() + "\n\n"
+                                + "Code:\n" + dp.getCode();
+                        String title = String.valueOf(index + 1) + ". result for \"" + evalString + "\"";
+                        JOptionPane.showMessageDialog(null, message, title, JOptionPane.OK_OPTION);
                         System.out.println("Mouse-Click-On-Label-Event executed:");
                         System.out.println(dp.getScore());
                         System.out.println("My position in the recom-array: " + recom.indexOf(lab));
