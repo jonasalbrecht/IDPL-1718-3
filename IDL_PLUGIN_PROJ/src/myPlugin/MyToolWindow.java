@@ -40,7 +40,7 @@ public class MyToolWindow implements ToolWindowFactory {
         toplvlPanel = new JPanel(new BorderLayout());
         panel = new JPanel(new GridBagLayout());
         tf = new JTextField("");
-        JButton but = new JButton("Correct Button, AMK!");
+        JButton but = new JButton("Search");
         GridBagConstraints c = new GridBagConstraints();
 
         toplvlPanel.add(panel, BorderLayout.NORTH);
@@ -98,6 +98,7 @@ public class MyToolWindow implements ToolWindowFactory {
         toolWindow.setAutoHide(false);
     }
 
+
     private void showSolution(GridBagConstraints c){
         if(tf.getText().equals("")){
             for(JLabel l : recom){
@@ -143,6 +144,3 @@ public class MyToolWindow implements ToolWindowFactory {
 
 
 }
-
-
-//cikm string comparism
