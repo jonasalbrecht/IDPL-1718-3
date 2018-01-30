@@ -5,9 +5,11 @@ import com.intellij.openapi.wm.ToolWindow;
 import com.intellij.openapi.wm.ToolWindowFactory;
 import com.intellij.ui.content.Content;
 import com.intellij.ui.content.ContentFactory;
+import com.wcohen.ss.SmithWaterman;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
+import javax.xml.crypto.Data;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
@@ -18,21 +20,51 @@ public class MyToolWindow implements ToolWindowFactory {
     private JPanel toplvlPanel;
     private JPanel panel;
     private JTextField tf;
-    private ArrayList<String> resultsDemo = new ArrayList<String>();
     private ArrayList<JLabel> recom = new ArrayList<JLabel>();
 
+    private ArrayList<DataPair> dataPairs = new ArrayList<>();
+    private SmithWaterman sm = new SmithWaterman();
+
+    private ArrayList<DataPair> getTopFive(String text) {
+        ArrayList<DataPair> topFive = new ArrayList<>();
+        for(DataPair dp : dataPairs){
+            setSM_score(text, dp);
+            addToTopTive(dp, topFive);
+        }
+        return topFive;
+    }
+
+    private double setSM_score(String source, DataPair dp){
+        dp.setScore(sm.score(source, dp.getDescription()));
+        return dp.getScore();
+    }
+
+    private void addToTopTive(DataPair dp, ArrayList<DataPair> targetArray){
+        if(targetArray.isEmpty()){
+            targetArray.add(dp);
+        }
+        for(int i = 0; i < targetArray.size(); i++){
+            if(dp.getScore() >= targetArray.get(i).getScore()){
+                targetArray.add(i, dp);
+                while(targetArray.size() > 5){
+                    targetArray.remove(5);
+                }
+                return;
+            }
+        }
+    }
+
     public MyToolWindow() {
-        resultsDemo.add("First Result: Some nice stuff about arrays");
-        resultsDemo.add("Second Result: Some nice stuff about lists");
-        resultsDemo.add("Third Result: Some nice stuff about initializing");
-        resultsDemo.add("Fourth Result: Some nice stuff about window-classes");
-        resultsDemo.add("Fifth Result: Some nice stuff about allocating memory");
-        resultsDemo.add("Sixth Result: Some nice stuff about deleting parts of an array");
-        resultsDemo.add("Seventh Result: Some nice stuff about generating random numbers");
-        resultsDemo.add("Eighth Result: Some nice stuff about parsing of strings");
-        resultsDemo.add("Ninth Result: Some nice stuff about big integers");
-        resultsDemo.add("Tenth Result: Some nice stuff about something completely different");
-        resultsDemo.add("Eleventh Result: Some nice stuff about introduction to java");
+        dataPairs.add(new DataPair("matrix.I", "Returns the (multiplicative) inverse of invertible self."));
+        dataPairs.add(new DataPair("matrix.A","Return self as an ndarray object."));
+        dataPairs.add(new DataPair("matrix","Returns a matrix from an array-like object, or from a string of data."));
+        dataPairs.add(new DataPair("asmatrix(data[, dtype])","Interpret the input as a matrix."));
+        dataPairs.add(new DataPair("bmat(obj[, ldict, gdict])","Build a matrix object from a string, nested sequence, or array."));
+        dataPairs.add(new DataPair("memmap","Create a memory-map to an array stored in a binary file on disk."));
+        dataPairs.add(new DataPair("memmap.flush()","Write any changes in the array to the file on disk."));
+        dataPairs.add(new DataPair("chararray","Provides a convenient view on arrays of string and unicode values."));
+        dataPairs.add(new DataPair("core.defchararray.array(obj[, itemsize, ...])","Create a chararray"));
+        dataPairs.add(new DataPair("recarray","Construct an ndarray that allows field access using attributes."));
     }
 
     @Override
@@ -100,11 +132,13 @@ public class MyToolWindow implements ToolWindowFactory {
 
 
     private void showSolution(GridBagConstraints c){
-        if(tf.getText().equals("")){
-            for(JLabel l : recom){
-                panel.remove(l);
-            }
-            recom.clear();
+        String evalString = tf.getText();
+        for(JLabel l : recom){
+            panel.remove(l);
+        }
+        recom.clear();
+        if(evalString.equals("")){
+            return;
         } else {
             c.weightx = 1;
             c.gridx = 0;
@@ -112,15 +146,16 @@ public class MyToolWindow implements ToolWindowFactory {
             c.ipadx = 0;
             c.insets = new Insets(5,10,5,10);  // paddings
             c.anchor = GridBagConstraints.LINE_START;
+            ArrayList<DataPair> results = getTopFive(evalString);
             int i = 1;
-            for (String s : resultsDemo) {
+            for (DataPair dp : results) {
                 JLabel lab = new JLabel();
-                lab.setText(s);
+                lab.setText(dp.getDescription());
                 lab.addMouseListener(new MouseListener() {
                     @Override
                     public void mouseClicked(MouseEvent e) {
                         System.out.println("Mouse-Click-On-Label-Event executed:");
-                        System.out.println(s);
+                        System.out.println(dp.getScore());
                         System.out.println("My position in the recom-array: " + recom.indexOf(lab));
                     }
                     @Override
@@ -140,7 +175,4 @@ public class MyToolWindow implements ToolWindowFactory {
         }
         panel.updateUI();
     }
-
-
-
 }
