@@ -138,7 +138,7 @@ public class MyToolWindow implements ToolWindowFactory {
         }
         recom.clear();
         if(evalString.equals("")){
-            return;
+            // Do nothing
         } else {
             c.weightx = 1;
             c.gridx = 0;
